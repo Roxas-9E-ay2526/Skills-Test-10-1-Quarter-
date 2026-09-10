@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+    <title>Receipt Generator</title>
+
+</head>
+<body>
+
+    <h1>OBMC Entrep Fair Group 1 - Chester's Wiener Stand</h1>
+    <h3>Menu:</h3>
+    
+    <div class="menu-list">
+        <label><input type="checkbox" id="Hotdog1" value="120"> Classic New York Hotdog - ₱120</label><br>
+        <label><input type="checkbox" id="Hotdog2" value="145"> Loaded Chili Cheese Dog - ₱145</label><br>
+        <label><input type="checkbox" id="Hotdog3" value="130"> Bacon Wrapped Hotdog - ₱130</label><br>
+        <label><input type="checkbox" id="Hotdog4" value="70"> Crispy Corn Dog - ₱70</label><br>
+        <label><input type="checkbox" id="Hotdog5" value="60"> Ice Cold Fountain Soda - ₱60</label><br>
+    </div>
+    
+    <button id="btn-create" py-click="create_order">Create Order</button>
+    <div id="show"></div>
+
+    
+   <py-script src="main.py"></py-script>
+
+</body>
+</html>
